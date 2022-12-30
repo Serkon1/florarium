@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');*/
 
 * {
     box-sizing: border-box;
@@ -8,6 +8,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -24,7 +25,32 @@ ul>li {
 
 }
 
-.logo {}
+.container {
+
+    max-width: 1210px;
+    margin: 0px auto;
+
+}
+
+.header {
+    background-color: yellow;
+
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 21px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
 
 .logo__img-wrap {
     height: 60px;
@@ -46,7 +72,7 @@ ul>li {
 }
 
 .logo__title {
-    font-family: 'Roboto', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -55,7 +81,7 @@ ul>li {
 }
 
 .logo__subtitle {
-    font-family: 'Roboto', sans-serif;
+
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -63,8 +89,21 @@ ul>li {
     color: #000000;
 }
 
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+
+    margin-right: 55px;
+}
+
+.nav__item:last-child {
+    margin-right: 0px;
+}
+
 .nav__link {
-    font-family: 'Roboto', sans-serif;
+
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -74,7 +113,7 @@ ul>li {
 }
 
 .contact__tel {
-    font-family: 'Roboto', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -87,6 +126,9 @@ ul>li {
     background: #FFFFFF;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
 }
 
 .cart__img-wrap {
@@ -110,11 +152,16 @@ ul>li {
 }
 
 .cart__price {
-    font-family: 'Roboto', sans-serif;
+    display: flex;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+}
+
+.cart__price,
+.cart__btn {
+    margin-left: 13px;
 }
 
 .cart__price-value {}
