@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 
@@ -81,7 +82,68 @@
                 <img src="img/hero_img.jpg" alt="флорариум" class="hero__slide">
             </div>
         </section>
+        <section class="product">
+            <div class="container">
+                <h2 class="title">Готовые работы</h2>
+                <p class="product__subtitle">
+                    Подбери себе флорариум по размеру:
+                </p>
+                <ul class="product__size-list">
+                    <li class="product__size">
+                        <label>
+                            <input type="radio" name="size" class="product__check">
+                            <div class="product__check-fake">s</div>
+                        </label>
+                    </li>
+                    <li class="product__size">
+                        <label>
+                            <input type="radio" name="size" class="product__check">
+                            <div class="product__check-fake">m</div>
+                        </label>
+                    </li>
+                    <li class="product__size">
+                        <label>
+                            <input type="radio" name="size" class="product__check">
+                            <div class="product__check-fake">n</div>
+                        </label>
+                    </li>
+                    <li class="product__size">
+                        <label>
+                            <input type="radio" name="size" class="product__check">
+                            <div class="product__check-fake">xl</div>
+                        </label>
+                    </li>
+                    <li class="product__size"></li>
+                    <li class="product__size"></li>
+                    <li class="product__size"></li>
 
+                </ul>
+                <div class="product__slider">
+                    <div class="product__slider-ctrls">
+                        <div class="product__slider-ctrls product__slider-ctrl--prev">назад</div>
+                        <div class="product__slider-ctrls product__slider-ctrl--next">вперед</div>
+
+                    </div>
+                    <ul class="prodect__list">
+                        <li class="product__item">
+                            <div class="product__img-wrap">
+                                <img src="img/finished_work/oazis.png" alt="оазис" class="prodect__img">
+                            </div>
+                            <div class="product__desc">
+                                <h3 class="product__name">"Оазис"</h3>
+                                <p class="product__info">Набор включает в себя: 3 разновидности суккулентов, тайскую
+                                    архидею, грунт, стеклянный флорариум и элементы декора.</p>
+                            </div>
+                            <div class="product__buy">
+                                <div class="product__price">35$</div>
+                                <button class="product__buy-btn btn">В корзину</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
 
     </div>
 
